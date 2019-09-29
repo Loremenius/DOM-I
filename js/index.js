@@ -89,8 +89,23 @@ function addContent(){
 
 }
 
+function addNewContent(){
+  const nav = document.querySelector('nav');
+  const navItem1 = document.createElement('a');
+  const navItem2 = document.createElement('a');
+  navItem1.textContent = 'Discord';
+  navItem2.textContent = 'Youtube';
+  nav.appendChild(navItem1);
+  nav.prepend(navItem2);
+  const navEL = document.querySelectorAll('a');
+  navEL.forEach((item)=>{
+    item.style.color = 'green';
+  })
+}
+
 addNavItems();
 addCtaItems();
 addH4();
 addContent();
+addNewContent();
 
