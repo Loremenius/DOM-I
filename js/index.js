@@ -61,6 +61,10 @@ function addCtaItems(){
   buttonEL[0].textContent = siteContent.cta.button;
   ctaImg.src = 'img/header-img.png'
 
+  buttonEL[0].addEventListener('click',(event)=>{
+    buttonEL[0].textContent = 'you clicked the button!';
+  });
+
 }
 
 function addH4(){
